@@ -1,0 +1,18 @@
+{
+
+  "manifest_version": 2,
+  "name": "nemoWeb",
+  "version": "1.0",
+
+  "description": "Amélioration ergonomique de Nemo Web",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.aasm.wnemo.fr/*"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ]
+
+
+}
