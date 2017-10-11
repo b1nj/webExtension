@@ -43,6 +43,9 @@ select.search_by, #quick_search {
 #menu ul li a {
     color: white;
 }
+#menu > ul > li:nth-child(-n+6) > a {
+    background: #8f0300;
+}
 #menu ul li li a {
     color: black;
 }
@@ -72,6 +75,18 @@ select.search_by, #quick_search {
     background-color: #eee;
     border: 1px solid #aaa;
 }
+
+ul#accordion {
+    border: 0 none;
+    border-radius: 0;
+}
+ul#accordion li a.title {
+    margin: 10px 0 !important;
+    border: 0 none;
+    border-radius: 0 ;
+
+}
+
 
 
 
