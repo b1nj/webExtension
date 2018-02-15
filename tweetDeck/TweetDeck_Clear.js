@@ -1,6 +1,6 @@
 
 function addButtons() {
-    var button = '<button style="position: absolute; right: 10px; top: -10px; padding-bottom: 0px;" type="button" class="js-user-button btn btn-alt btn-neutral btn-options-tray padding-hn "> <i class="icon icon-clear-timeline"></i> <span class="label">Clear</span> </button>';
+    var button = '<button style="position: absolute; right: 10px; top: -10px; padding-bottom: 0px;" type="button" class="js-user-button Button--link btn-options-tray padding-hn "> <i class="icon icon-clear-timeline"></i> <span class="label">Clear</span> </button>';
     window.TD_mustaches["column/column_header.mustache"] = window.TD_mustaches["column/column_header.mustache"].replace(' </header>', button + ' </header>');
 
     $(document).on('click', '.js-user-button', function () {
