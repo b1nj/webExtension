@@ -1,0 +1,27 @@
+/* Menu */
+.lyteItem[data-value=Activities],
+.lyteItem[data-value=Leads],
+.lyteItem[data-value=Tasks],
+.lyteItem[data-value=Events],
+.lyteItem[data-value=Calls],
+.lyteItem[data-value=Feeds],
+.lyteItem[data-value=Dashboards],
+.lyteItem[data-value=Vendors] {
+    display: none;
+}
+
+/* Menu droite */
+#feeds_notification_container,
+crm-create-menu,
+#sCalenDar,
+.crmMenuRight link-to.lyteItem[lt-prop-title=Marketplace] {
+    display: none;
+}
+
+
+/* Footer */
+#wmsstatusbar,
+#wms_notebook_icon,
+#wmsphonebridge {
+   display: none !important;
+}
