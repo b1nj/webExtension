@@ -1,9 +1,9 @@
 
 function logURL(requestDetails) {
 
-    console.log(requestDetails);
+    /*console.log(requestDetails);
     requestDetails.requestBody.formData['mode'] = "INJECTED"
-    requestDetails.requestBody.formData['test'] = "INJECTED"
+    requestDetails.requestBody.formData['test'] = "INJECTED"*/
 
     /*requestDetails.requestBody.formData.forEach(function(data){
         if (data == "mode") {
@@ -11,9 +11,16 @@ function logURL(requestDetails) {
         }
     });*/
 
+
+    if (requestDetails.url !== 'https://crm.zoho.eu/crm/org20070672839/GSearch.do') {
+        return;
+    }
+
     console.log(requestDetails);
 
-    return {requestBody: requestDetails.requestBody};
+    return {
+        redirectUrl: 'https://crm.zoho.eu/crm/org20070672839/GSearch.do' + '?ajaxSearch=true&searchCategory=AllEntities&newModel=true&sModules=Contacts,Accounts&selectedmodule=Home'
+    };
 }
 
 browser.webRequest.onBeforeRequest.addListener(

@@ -14,7 +14,7 @@
 #feeds_notification_container,
 crm-create-menu,
 #sCalenDar,
-.crmMenuRight link-to.lyteItem[lt-prop-title=Marketplace] {
+.crmMenuRight [lt-prop-title=Marketplace] {
     display: none;
 }
 
@@ -24,4 +24,85 @@ crm-create-menu,
 #wms_notebook_icon,
 #wmsphonebridge {
    display: none !important;
+}
+
+
+/* Modification libelle menu */
+#Visible_Potentials {
+    text-indent: -9999px;
+    line-height: 0;
+}
+#Visible_Potentials:after {
+    display: block;
+    content: 'Sites';
+    text-indent: 0;
+    line-height: initial;
+}
+
+
+
+/*
+Contacts,Accounts,Potentials,CustomModule6
+
+Leads,Tasks,Events,Calls,Products,Quotes,CustomModule4,Documents,
+CustomModule2,CustomModule3,CustomModule5,CustomModule7,LinkingModule3,Vendors,Notes */
+
+
+/* Recherche compléte */
+#ajax_Leads,
+#ajax_Tasks,
+#ajax_Events,
+#ajax_Calls,
+#ajax_Products,
+#ajax_Quotes,
+#ajax_Documents,
+#ajax_CustomModule2,
+#ajax_CustomModule3,
+#ajax_CustomModule4,
+#ajax_CustomModule5,
+#ajax_CustomModule7,
+#ajax_Vendors,
+#ajax_Notes,
+#notesForGsearch,
+#searchAcrossZohoDiv {
+    display: none;
+}
+
+
+
+
+
+/* Recherche rapide */
+.ui-menu li {
+    display: none !important;
+}
+
+#gsac_Contacts,
+#gsac_Contacts ~ li,
+#gsac_Potentials,
+#gsac_Potentials ~ li,
+#gsac_Accounts ~ li,
+#gsac_Accounts,
+#gsac_CustomModule6,
+#gsac_CustomModule6 ~ li {
+    display: block !important;
+}
+
+li#gsac_Events,
+#gsac_Events ~ li,
+li#gsac_Calls,
+#gsac_Calls ~ li,
+li#gsac_Tasks,
+#gsac_Tasks ~ li,
+li#gsac_Quotes,
+#gsac_Quotes ~ li,
+li#gsac_CustomModule2,
+#gsac_CustomModule2 ~ li,
+li#gsac_CustomModule3,
+#gsac_CustomModule3 ~ li {
+    display: none !important;
+}
+
+#openZohoSearchLink {
+    display: none;
 }
